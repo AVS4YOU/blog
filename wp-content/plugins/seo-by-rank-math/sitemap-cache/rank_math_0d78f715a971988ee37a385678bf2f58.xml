@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//192.168.3.164:86/main-sitemap.xsl"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>http://192.168.3.164:86/post-sitemap.xml</loc>
+		<lastmod>2019-12-16T17:27:43+03:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://192.168.3.164:86/page-sitemap.xml</loc>
+		<lastmod>2020-01-09T10:58:20+03:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>http://192.168.3.164:86/category-sitemap.xml</loc>
+		<lastmod>2019-12-16T17:27:43+03:00</lastmod>
+	</sitemap>
+</sitemapindex>
