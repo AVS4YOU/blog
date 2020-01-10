@@ -128,12 +128,13 @@
 		<div class="burgerButton">
 			<span></span>
 		</div>	
-<!--	<div class="langBox">
-			<div class="langSwitcher" id="langSwitcher"><?php echo pll_current_language('name'); ?></div>
-			<div class="langSubBox">
-				<?php pll_the_languages(array('show_flags'=>1,'show_names'=>1,'dropdown'=>0));  ?>
+		<div class="langBox">
+			<div class="langSwitcher" id="langSwitcher"><?php echo pll_current_language('name'); ?>
+				<div class="langSubBox">
+					<?php pll_the_languages(array('show_flags'=>1,'show_names'=>1,'dropdown'=>0));  ?>
+				</div>
 			</div>
-		</div> -->
+		</div> 
 	</div>
 </div>
 <div id="subPopupContainer" class="subPopupContainer">

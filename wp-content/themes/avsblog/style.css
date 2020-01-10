@@ -785,7 +785,7 @@ a .logo{
 	background-color: #fff;
 	color: #000;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.3);
-	top: 67px;
+	top: 62px;
 	right: 0;
 	z-index: 195;
 	text-align: right;
@@ -804,7 +804,8 @@ a .logo{
 	text-decoration: none;
 	color: #333;
 	position: relative;
-	display: block;
+	display: grid;
+	grid-template-columns: 16px auto;
 	text-align: left;
 }
 
@@ -834,17 +835,17 @@ a .logo{
 
 .langSwitcher{
 	color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     margin: 0;
     cursor: pointer;
     position: relative;
-    padding: 22px 47px 21px;
+    padding: 22px 30px 21px 42px;
     font-weight: 600;
 }
 
 .langSwitcher:hover{
-	background-color: #54A9DD;
+	background-color: #FFB06B;
 }
 
 .langSwitcher:before{
@@ -856,7 +857,7 @@ a .logo{
     background-repeat: no-repeat;
     background-position: 50%;
     position: absolute;
-    left: 20px;
+    left: 13px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -868,7 +869,7 @@ a .logo{
     height: 0;
     display: block;
     position: absolute;
-	right: 35px;
+	right: 13px;
     top: 0;
     border: 3px solid transparent;
     border-top: 3px solid #fff;
@@ -904,7 +905,7 @@ a .logo{
 }
 
 .headerButton.sub{
-	padding: 10px 50px;
+	padding: 10px 20px;
 	background-color: transparent;
 	color: #fff;
 	border-radius: 5px;
@@ -915,21 +916,18 @@ a .logo{
 	-khtml-user-select: none;
 	user-select: none; 
 	margin:0;
+	margin-right:20px;
 }
 
 .headerButton.sub:hover{
 	background-color: #FDA050;
 	border:none;
-	padding: 12px 51px;
+	padding: 12px 21px;
 	opacity: 1;
 }
 
 .headLinkWrapper{
 	align-self: center;
-}
-
-.headLinkWrapper.blogLink{
-	padding-bottom: 2px;
 }
 
 .a2a_floating_style{
@@ -940,7 +938,7 @@ a .logo{
 
 .menu-grid-container {
 	display: grid;
-	grid-template-columns: auto auto 1fr auto;
+	grid-template-columns: auto auto 1fr auto auto;
 	grid-template-rows: 1fr;
 	max-width: 1300px;
     margin: auto;
@@ -950,7 +948,7 @@ a .logo{
 
 .site-navigation-box{
 	display: grid;
-    padding: 0 40px;
+    padding: 0 20px;
 	grid-template-columns: auto auto auto auto auto auto;
 }
 
@@ -1007,7 +1005,7 @@ a .logo{
 
 .sub-nav-item{
 	position: absolute;
-    top: 60px;
+    top: 62px;
     background-color: #fff;
     padding: 24px;
     box-sizing: border-box;
@@ -1654,17 +1652,24 @@ footer .footerLogo{
 
 @media screen and (max-width: 1200px) {
 
-	.headerButton{
+	.headerButton, 
+	.langSubBox li > a > span,
+	.langSwitcher{
 		font-size: 12px;
 	}
 
+	.langSubBox{
+		top:60px;
+	}
+
 	.headerButton.sub{
-		font-size: 14px;
-		padding: 10px 35px;
+		margin-right: 10px;
+		padding: 10px 10px;
+		font-size: 12px;
 	}
 
 	.headerButton.sub:hover{
-		padding: 10px 36px;
+		padding: 10px 11px;
 	}
 	
 	.nav-item p{
@@ -1689,7 +1694,7 @@ footer .footerLogo{
 	}
 	
 	.site-navigation-box{
-		padding: 0 20px;
+		padding: 0 15px;
 	}
 
 	.wrapperMain{
@@ -1833,9 +1838,13 @@ footer .footerLogo{
 		position: relative;
 		padding-bottom: 60px;
 	}
+
+	.headLinkWrapper{
+		padding-bottom: 2px;
+	}
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1050px) {
 	.site-navigation-box{
 		padding: 0;
 		background-color: #fff;
@@ -2124,12 +2133,12 @@ footer .footerLogo{
 
 	.headerButton.sub{
 		font-size: 14px;
-		padding: 5px 30px;
+		padding: 5px 20px;
 		margin: 0;
 	}
 
 	.headerButton.sub:hover{
-		padding: 6px 31px;
+		padding: 6px 21px;
 	}
 
 	.subPopupContainer{

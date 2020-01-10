@@ -1,6 +1,6 @@
 jQuery(document).ready(function ($) {
 
-    var mobileWidth = 980;
+    var mobileWidth = 1050;
 
     var isMobile = parseInt(window.innerWidth) <= mobileWidth;
     var langBox = $(".langSubBox");
@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
         langBox.is(":visible") ? langBox.hide() : langBox.show()
     } 
 
-    $("#langSwitcher").on("click", function () {
+    $("#langSwitcher").on("hover", function () {
         showHideLang();
     })
 
@@ -224,9 +224,6 @@ jQuery(document).ready(function ($) {
     });
 
     $('body').on("mousedown", function (evt) {
-        if (evt.target.id != "langSwitcher" || !$(evt.target).closest('#langSwitcher').length)
-            langBox.is(":visible") ? showHideLang() : ''
-
         if($(evt.target).closest('.subPopupContainer').length == 0 && $(evt.target).attr("id") != "openSupPopup"){
             $(".subPopupContainer").hide();
         }
