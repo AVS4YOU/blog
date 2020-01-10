@@ -121,7 +121,14 @@
 			<div id="backFromSubmenu">back</div>
 			<div id="logoMobileMenu"></div>
 			<div id="closeMobileMenu">×</div>
-		</div>
+			<div class="langSwitcherWrapper">
+				<div class="langSwitcher nav-item hasSubMenu mobile" id="langSwitcher"><?php echo pll_current_language('name'); ?>
+					<div class="langSubBox sub-nav-item">
+						<?php pll_the_languages(array('show_flags'=>1,'show_names'=>1,'dropdown'=>0));  ?>
+					</div>
+				</div>
+			</div>
+		</div> 
 		<div class="headLinkWrapper">
 			<a id="openSupPopup" class="headerButton sub">Subscribe</a>	
 		</div>
@@ -129,8 +136,8 @@
 			<span></span>
 		</div>	
 		<div class="langBox">
-			<div class="langSwitcher" id="langSwitcher"><?php echo pll_current_language('name'); ?>
-				<div class="langSubBox">
+			<div class="langSwitcher nav-item hasSubMenu" id="langSwitcher"><?php echo pll_current_language('name'); ?>
+				<div class="langSubBox sub-nav-item">
 					<?php pll_the_languages(array('show_flags'=>1,'show_names'=>1,'dropdown'=>0));  ?>
 				</div>
 			</div>

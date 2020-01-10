@@ -5,7 +5,9 @@ body {
 	padding-top: 70px;
 }
 
-
+.langSwitcherWrapper{
+	display:none;
+}
 
  body h3{
 	 font-size: 24px;
@@ -779,25 +781,13 @@ a .logo{
 	position: relative;
 }
 
-.langSubBox{
-	position: absolute;
-	display: none;
-	background-color: #fff;
-	color: #000;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.3);
-	top: 62px;
-	right: 0;
-	z-index: 195;
-	text-align: right;
-	padding: 10px 17px;
-	padding-left: 19px;
-	width: 100%;
-    box-sizing: border-box;
-}
-
 .langSubBox li{
 	display: block;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
+}
+
+.langSubBox li:last-child{
+	margin-bottom: 0;
 }
 
 .langSubBox li>a{
@@ -1014,6 +1004,16 @@ a .logo{
 	opacity: 0;
 	visibility: hidden;
 	transition: .2s linear;
+}
+
+.sub-nav-item.langSubBox{
+	color: #000;
+	right: 0;
+	z-index: 195;
+	text-align: right;
+	padding: 13px 17px;
+	padding-left: 19px;
+	width: 100%;
 }
 
 .sub-nav-item.two-col{
@@ -1857,13 +1857,93 @@ footer .footerLogo{
 		overflow: auto;
 		text-align: center;
 		font-size: 16px;
-		transition: right .5s;
+		transition: right .5s linear;
 		width: 100%;
 		z-index: 5;
 		display: block;
 		padding-top: 90px;
 		box-sizing: border-box;
 		overflow-x: hidden;
+	}
+
+	.langSwitcherWrapper{
+		position: fixed;
+		bottom: 0;
+		display: block;
+		background-color:
+		#fff;
+		width: 100%;
+		right: -120vw;
+		transition: right .5s linear;
+	}
+
+	.langSwitcher, .langBox{
+		display:none;
+	}
+
+	.langSubBox li > a{
+		display:block;
+	}
+
+	.langSubBox li > a > img{
+		display: none;
+	}
+
+	.langSubBox li > a > span{
+		display: block;
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+		margin-bottom: 13px;
+		margin-left: 0px !important;
+	}
+
+	.langSwitcher.nav-item.hasSubMenu.mobile{
+		display: block;
+	}
+
+	body.menuOpen .langSwitcherWrapper{
+		right: 0vw;
+	}
+
+	.langSwitcher.nav-item.mobile{
+		width: max-content;
+		display: block;
+		cursor: pointer;
+		background-color:#fff;
+		margin: auto;
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;
+		color:#333333;
+		position: relative;
+	}
+
+	.langSwitcher:hover{
+		background-color:transparent;
+	}
+
+	.langSwitcher:after{
+		content: '';
+		border:none;
+		width: 4px;
+		height: 4px;
+		border-top: 1px solid#333;
+		border-left: 1px solid#333;
+		-webkit-transition: .2s linear;
+		transition: .2s linear;
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		transform: rotate(135deg);
+		display: inline-block;
+		margin-left: 5px;
+	}
+
+	.langSwitcher:before{
+		background-image: url("images/language-black.svg");
+	}
+	.langBox.mobile{
+
 	}
 
 	body.menuOpen{
@@ -1927,7 +2007,7 @@ footer .footerLogo{
 	.nav-item .headerSingleLink{
 		color: #333;
 		font-size: 16px;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	.nav-item .headerSingleLink:hover{
@@ -1936,10 +2016,32 @@ footer .footerLogo{
 
 	.nav-item.hasSubMenu p{
 		padding-right:0;
+		font-weight: 600;
 	}
 
 	.nav-item.hasSubMenu p:after{
+		content: '';
 		border: none;
+		width: 4px;
+		height: 4px;
+		border-top: 1px solid #333;
+		border-left: 1px solid #333;
+		-webkit-transition: .2s linear;
+		transition: .2s linear;
+		-webkit-transform: rotate(135deg);
+		-ms-transform: rotate(135deg);
+		transform: rotate(135deg);
+		display: inline-block;
+		margin-left: 5px;
+		top: 0;
+		bottom: 0;
+		right: -14px;
+		margin: auto;
+	}
+
+	.nav-item.hover.hasSubMenu p:after{
+		transform: rotate(135deg);
+		top: 0;
 	}
 
 	.nav-item .sub-nav-item{
@@ -1962,11 +2064,15 @@ footer .footerLogo{
 		min-height: 400px;
 	}
 
+	.nav-item .sub-nav-item.langSubBox {
+		position: fixed;
+	}
+
 	#backFromSubmenu{
 		color: #333;
 		font-size: 14px;
 		font-weight: 500;
-		position: absolute;
+		position: fixed;
 		top: 85px;
 		left: 10px;
 		z-index: 30;

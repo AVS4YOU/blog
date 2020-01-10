@@ -94,7 +94,14 @@ jQuery(document).ready(function ($) {
         checkChangeScreen();
     });
 
+    function showHideSubmenu(object, mobile){
+
+    }
+
     function bindFunctionsMenu(){
+
+
+
         if(isMobile){
             $(".nav-item").unbind();
             $(".nav-item.hasSubMenu").on("click", function(){
