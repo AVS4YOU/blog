@@ -34,9 +34,9 @@ get_header(); ?>
         if(!empty($count) && isset($count)){ ?>
             <div class="activationWrapper">
                 <div class="contentBox">
-                    <h1>You are already subscribed. Please check your spam folder.</h1>
-                    <p>Enjoy reading AVS4YOU blog!</p>
-                    <a href="<?php echo site_url() ?>">Explore blog</a>
+                    <h1><?php pll_e('You are already subscribed. Please check your spam folder') ?>.</h1>
+                    <p><?php pll_e('Enjoy reading AVS4YOU blog!') ?></p>
+                    <a href="<?php echo site_url() ?>"><?php pll_e('Explore blog') ?></a>
                 </div>
                 <div class="activationImage"></div>
             </div>
@@ -55,9 +55,9 @@ get_header(); ?>
 
             <div class="activationWrapper">
                 <div class="contentBox">
-                    <h1><b>Thank you</b> for signing up for AVS4YOU newsletter!</h1>
-                    <p>Check your inbox for the first email and stay updated from now on!</p>
-                    <a href="<?php echo site_url() ?>">Explore blog</a>
+                    <h1><?php pll_e('<b>Thank you</b> for signing up for AVS4YOU newsletter!') ?></h1>
+                    <p><?php pll_e('Check your inbox for the first email and stay updated from now on!') ?></p>
+                    <a href="<?php echo site_url() ?>"><?php pll_e('Explore blog') ?></a>
                 </div>
                 <div class="activationImage"></div>
             </div>

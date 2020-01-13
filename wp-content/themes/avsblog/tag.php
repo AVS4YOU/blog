@@ -32,7 +32,7 @@ if ( have_posts() ) : ?>
 <?php endwhile;  ?>
 
 <?php else: ?>
-<p>Sorry, no posts matched your criteria.</p>
+<p><?php pll_e('Sorry, no posts matched your criteria') ?>.</p>
  
  
 <?php endif; ?>

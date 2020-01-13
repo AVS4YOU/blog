@@ -20,7 +20,7 @@ $the_query = new WP_Query($args); ?>
 <?php if ($the_query->have_posts()) : ?>
 
 <div class="wrapperColumn">
-		<a class="linkToHome inCicle" href=<?php echo site_url() ?>>BACK TO MAIN PAGE</a>
+		<a class="linkToHome inCicle" href=<?php echo site_url() ?>><?php pll_e('Back to main page') ?>/a>
 		<h1>Searching results</h1>
 		<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 			<div class="postWrapper" onclick="window.location='<?php the_permalink(); ?>'">
@@ -49,7 +49,7 @@ $the_query = new WP_Query($args); ?>
 				var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
 				var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
 			</script>
-			<div id="true_loadmore">Load more</div>
+			<div id="true_loadmore"><?php pll_e('Load more') ?></div>
 			<?php wp_reset_postdata(); ?>
 		<?php else : ?>
 
@@ -62,7 +62,7 @@ $the_query = new WP_Query($args); ?>
 
 <?php wp_reset_postdata(); ?>
 
-<h1 class="otherNewsHeader">Other interesting news</h1>
+<h1 class="otherNewsHeader"><?php pll_e('Other interesting news') ?></h1>
 
 
 <?php $wp_query = new WP_Query(array('post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 6, 'category__not_in' => $news_cat_id)); ?>

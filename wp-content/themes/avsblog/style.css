@@ -502,7 +502,8 @@ figure img {
     font-weight: bold;
     text-align: left;
     padding: 25px 32px;
-    padding-bottom: 0;
+	padding-bottom: 0;
+	text-transform: uppercase;
 }
 
 .newsBlock>div{
@@ -582,7 +583,12 @@ p, pre, li{
 	color: #1296E6;
     font-size: 13px;
     font-weight: 600;
-    padding-left: 0;
+	padding-left: 0;
+	text-transform: uppercase;
+}
+
+.linkToHome.inCicle{
+	text-transform: uppercase;
 }
 
 .postThemeHeaderBox{
@@ -1632,7 +1638,8 @@ footer .footerLogo{
     color: #fff;
     text-align: left;
     margin-top: 40px;
-    margin-bottom: 25px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
 }
 
 .top-grid-container {
