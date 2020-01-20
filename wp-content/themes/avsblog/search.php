@@ -20,7 +20,7 @@ $the_query = new WP_Query($args); ?>
 <?php if ($the_query->have_posts()) : ?>
 
 <div class="wrapperColumn">
-		<a class="linkToHome inCicle" href=<?php echo site_url() ?>><?php pll_e('Back to main page') ?>/a>
+		<a class="linkToHome inCicle" href=<?php echo site_url() ?><?php pll_e('/') ?>><?php pll_e('Back to main page') ?></a>
 		<h1>Searching results</h1>
 		<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 			<div class="postWrapper" onclick="window.location='<?php the_permalink(); ?>'">

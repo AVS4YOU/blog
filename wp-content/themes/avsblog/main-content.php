@@ -1,5 +1,5 @@
 <div class="wrapperColumn single">
-    <a class="linkToHome" href=<?php echo site_url() ?>><?php pll_e('BLOG') ?> / AVS4YOU</a>
+    <a class="linkToHome" href=<?php echo site_url() ?><?php pll_e('/') ?>><?php pll_e('BLOG') ?> / AVS4YOU</a>
     <div class="postThemeHeaderBox">
         <div class="post-info-block">
             <?php include 'blog-meta.php' ?>
