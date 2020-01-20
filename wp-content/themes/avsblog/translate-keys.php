@@ -129,5 +129,6 @@
 //links 
 
     pll_register_string('lang','lang');
+    pll_register_string('/','/');
 
 ?>
