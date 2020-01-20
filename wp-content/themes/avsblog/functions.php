@@ -265,4 +265,8 @@ function true_load_posts()
 
             include 'translate-keys.php';
 
+            /**************Polylang slug (same name pages on different languages)****************/
+
+            include 'polylang-slug.php';
+
             ?>

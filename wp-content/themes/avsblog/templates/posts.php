@@ -79,7 +79,7 @@ get_search_form();
 
 						<?php endif; ?>
 					</div>
-					<a href="<?php echo (site_url() . "/news") ?>" class="main_button news"><?php pll_e('All news') ?></a>
+					<a href="<?php echo (pll_e('/') . "news") ?>" class="main_button news"><?php pll_e('All news') ?></a>
 				</div>
 			</div>
 
