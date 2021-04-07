@@ -39,7 +39,7 @@
 			<div class="nav-item hasSubMenu">
 				<p><?php pll_e('Video software') ?></p>
 				<div class="sub-nav-item">
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>video.aspx" target="_blank">
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>avs-video-editor.aspx" target="_blank">
 						<h4><?php pll_e('AVS Video Editor') ?></h4>
 						<span><?php pll_e('Easily edit and create videos') ?></span>
 					</a>
@@ -60,7 +60,7 @@
 						<h4><?php pll_e('AVS Audio Editor') ?></h4>
 						<span><?php pll_e('Easily edit and create audio') ?></span>
 					</a>
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>avs-audio-converter.aspx" target="_blank">
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>avs-free-audio-converter.aspx" target="_blank">
 						<h4><?php pll_e('AVS Audio Converter') ?></h4>
 						<span><?php pll_e('Convert all popular audio formats') ?></span>
 					</a>

@@ -5,15 +5,15 @@
 			<div class="footer-links-box">
 				<h4><?php pll_e('Windows software') ?></h4>
 				<div class="footer-links-wrapper">
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>video.aspx"><?php pll_e('Video Software') ?></a>
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>audio.aspx"><?php pll_e('Audio Software') ?></a>
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>free.aspx"><?php pll_e('Free Software') ?></a>
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>avs-video-editor.aspx"><?php pll_e('Video Editor') ?></a>
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>avs-free-video-converter.aspx"><?php pll_e('Video Converter') ?></a>
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>avs-audio-editor.aspx"><?php pll_e('Audio Editor') ?></a>
 				</div>
 			</div>
 			<div class="footer-links-box">
 				<h4><?php pll_e('Partnership') ?></h4>
 				<div class="footer-links-wrapper">
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>affiliates/index.aspx"><?php pll_e('Affiliates') ?></a>
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>affiliates.aspx"><?php pll_e('Affiliates') ?></a>
 					<a href="https://www.avs4you.com<?php pll_e('/') ?>partners.aspx"><?php pll_e('Resellers') ?></a>
 					<a href="https://www.avs4you.com<?php pll_e('/') ?>education.aspx"><?php pll_e('Education') ?></a>
 				</div>
@@ -30,7 +30,7 @@
 			<div class="footer-links-box">
 				<h4><?php pll_e('Company') ?></h4>
 				<div class="footer-links-wrapper">
-					<a href="https://www.avs4you.com<?php pll_e('/') ?>contact.aspx"><?php pll_e('About AVS4YOU') ?></a>
+					<a href="https://www.avs4you.com<?php pll_e('/') ?>about-us.aspx"><?php pll_e('About AVS4YOU') ?></a>
 					<a href="https://www.avs4you.com<?php pll_e('/') ?>privacy.aspx"><?php pll_e('Privacy') ?></a>
 					<a href="https://www.avs4you.com<?php pll_e('/') ?>license-agreement.aspx"><?php pll_e('EULA') ?></a>
 					<a href="<?php echo site_url() ?><?php pll_e('/') ?>"><?php pll_e('Blog') ?></a>
