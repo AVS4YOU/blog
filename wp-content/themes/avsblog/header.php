@@ -13,11 +13,11 @@
 		var onloadCallback = function() {
 
 			if($("div").is("#popupCaptcha")){
-				grecaptcha.render('popupCaptcha', {'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'});  // test public key 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+				grecaptcha.render('popupCaptcha', {'sitekey' : '6LfK5b0UAAAAAHSrY2plGWoWj-V01fIqni2OvRf7'});  // test public key 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
 			}																								  // prod key 6LfK5b0UAAAAAHSrY2plGWoWj-V01fIqni2OvRf7
 
 			if($("div").is("#postsCaptcha")){
-				grecaptcha.render('postsCaptcha', {'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'});
+				grecaptcha.render('postsCaptcha', {'sitekey' : '6LfK5b0UAAAAAHSrY2plGWoWj-V01fIqni2OvRf7'});
 			}
 		};
 
