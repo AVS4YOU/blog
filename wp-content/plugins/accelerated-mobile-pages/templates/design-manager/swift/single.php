@@ -54,10 +54,10 @@
  						$author_box = array();
 						if( true == ampforwp_get_setting('amp-author-description') ) { ?>	
 						<?php
-						$author_box = array( 'avatar'=>true,
+						/*$author_box = array( 'avatar'=>true,
 													'avatar_size'=>60,	
 													'author_description'=>true,	
-													'ads_below_the_author'=>true);
+													'ads_below_the_author'=>true);*/
 						if( true == ampforwp_get_setting('amp-author-bio-name')){
 							$author_box['author_pub_name'] = true ;
 						}

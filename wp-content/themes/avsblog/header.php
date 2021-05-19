@@ -5,15 +5,16 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	<!--<?php wp_enqueue_script('google-recaptcha', 'https://www.google.com/recaptcha/api.js?hl=' . pll_current_language()) . '&onload=onloadCallback&render=explicit'; ?> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<?php wp_enqueue_script('google-recaptcha', 'https://www.google.com/recaptcha/api.js?hl=' . pll_current_language()) . '&onload=onloadCallback&render=explicit'; ?>
 	<?php wp_head(); ?>
 	<script type="text/javascript">
 
 		var onloadCallback = function() {
 
 			if($("div").is("#popupCaptcha")){
-				grecaptcha.render('popupCaptcha', {'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'});  // test public key
-			}
+				grecaptcha.render('popupCaptcha', {'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'});  // test public key 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI
+			}																								  // prod key 6LfK5b0UAAAAAHSrY2plGWoWj-V01fIqni2OvRf7
 
 			if($("div").is("#postsCaptcha")){
 				grecaptcha.render('postsCaptcha', {'sitekey' : '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'});
@@ -21,9 +22,18 @@
 		};
 
 	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=en'>
 	</script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $("#closeMobileMenu").on("click", function(){
+        $("body").removeClass("menuOpen");
+        $(".nav-item").removeClass("hover");
+        $("#backFromSubmenu").removeClass("show");
+    });
+    });
+	
+</script>
 	<meta name="viewport" content="width=device-width"/>
 </head>
 <body <?php body_class(); ?>>
@@ -99,7 +109,7 @@
 				<a class="headerSingleLink" href="https://www.avs4you.com<?php pll_e('/') ?>downloads.aspx"><?php pll_e('download') ?></a>
 			</div>
 			<div class="nav-item">
-				<a class="headerSingleLink" href="https://www.avs4you.com<?php pll_e('/') ?>register.aspx"><?php pll_e('Buy now') ?></a>
+				<a class="headerSingleLink" href="https://www.avs4you.com<?php pll_e('/') ?>register.aspx"><?php pll_e('buy now') ?></a>
 			</div>
 			<div class="nav-item hasSubMenu">
 				<p><?php pll_e('Help center') ?></p>
@@ -110,10 +120,10 @@
 					<a href="https://www.avs4you.com<?php pll_e('/') ?>guides/index.aspx" target="_blank">
 						<h4><?php pll_e('Guides') ?></h4>
 					</a>
-					<a href="https://onlinehelp.avs4you.com/" target="_blank">
+					<a href="https://onlinehelp.avs4you.com<?php pll_e('/') ?>" target="_blank">
 						<h4><?php pll_e('Knowledge center') ?></h4>
 					</a>
-					<a href="https://support.avs4you.com/faq.aspx" target="_blank">
+					<a href="https://support.avs4you.com<?php pll_e('/') ?>faq.aspx" target="_blank">
 						<h4><?php pll_e('FAQ') ?></h4>
 					</a>
 				</div>

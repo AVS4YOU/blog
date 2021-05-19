@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 <?php
-// request
+// запрос
 
 $news_cat_id = get_cat_ID('news'); 
 $news_post_cat_id = get_cat_ID('news-post'); 
@@ -60,7 +60,7 @@ get_search_form();
 
 			<div class="newsBlock">
 				<div>
-					<h1><?php pll_e('News') ?></h1>
+					<h1>NEWS</h1>
 					<div class="shortNewsWrapper">
 						<?php if ($queryNews->have_posts()) : ?>
 							<?php while ($queryNews->have_posts()) : $queryNews->the_post(); ?>
@@ -79,7 +79,7 @@ get_search_form();
 
 						<?php endif; ?>
 					</div>
-					<a href="<?php echo site_url() ?><?php pll_e('/') ?>news" class="main_button news"><?php pll_e('All news') ?></a>
+					<a href="<?php echo (site_url() . "/news") ?>" class="main_button news">All news</a>
 				</div>
 			</div>
 
@@ -88,6 +88,8 @@ get_search_form();
 
 	<?php wp_reset_postdata(); ?>
 
+<?php else : ?>
+	<p><?php pll_e('Sorry, no posts matched your query'); ?>.</p>
 <?php endif; ?>
 
 <?php 
@@ -135,7 +137,7 @@ get_search_form();
 				var current_page = '<?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>';
 				var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
 			</script>
-			<div class="main_button" id="true_loadmore"><?php pll_e('Load more') ?></div>
+			<div class="main_button" id="true_loadmore">Load more</div>
 
 		<?php endif; ?>
 	</div>

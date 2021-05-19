@@ -23,8 +23,8 @@
 				<div class="footer-links-wrapper">
 					<a href="https://support.avs4you.com<?php pll_e('/') ?>login.aspx"><?php pll_e('Support form') ?></a>
 					<a href="https://www.avs4you.com<?php pll_e('/') ?>guides/index.aspx"><?php pll_e('Guides') ?></a>
-					<a href="https://onlinehelp.avs4you.com/"><?php pll_e('Knowledge center') ?></a>
-					<a href="https://support.avs4you.com/faq.aspx?_ga=2.125238479.451887061.1570001201-834643783.1569833768"><?php pll_e('FAQ') ?></a>
+					<a href="https://onlinehelp.avs4you.com<?php pll_e('/') ?>"><?php pll_e('Knowledge center') ?></a>
+					<a href="https://support.avs4you.com<?php pll_e('/') ?>faq.aspx?_ga=2.125238479.451887061.1570001201-834643783.1569833768"><?php pll_e('FAQ') ?></a>
 				</div>
 			</div>
 			<div class="footer-links-box">
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="rights"><a href="<?php echo site_url() ?><?php pll_e('/') ?>">© Online Media Technologies Ltd., UK</a> 2020 <?php pll_e('All rights reserved'); ?>.</div>
+		<div class="rights"><a href="<?php echo site_url() ?><?php pll_e('/') ?>">© Online Media Technologies Ltd., UK</a> 2021 <?php pll_e('All rights reserved'); ?>.</div>
 	</footer>
 	<?php wp_footer(); ?>
 	<script id="dsq-count-scr" src="//avs4you-blog.disqus.com/count.js" async></script>

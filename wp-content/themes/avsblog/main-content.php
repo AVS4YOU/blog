@@ -1,8 +1,9 @@
 <div class="wrapperColumn single">
-    <a class="linkToHome" href=<?php echo site_url() ?><?php pll_e('/') ?>><?php pll_e('BLOG') ?> / AVS4YOU</a>
+    <a class="linkToHome" href=<?php echo site_url() ?>>BLOG / AVS4YOU</a>
     <div class="postThemeHeaderBox">
         <div class="post-info-block">
             <?php include 'blog-meta.php' ?>
+			<span class="autor"><?php the_tags( $before, $separator, $after ); ?></span>
         </div>
         <a class="postThemeHeader" href="<?php the_permalink(); ?>">
             <h1><?php the_title(); ?></h1>

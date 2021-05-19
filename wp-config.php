@@ -21,14 +21,14 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', 'E:\git\avsBlog\wp-content\plugins\wp-super-cache/' );
-define( 'DB_NAME', 'avs_blog' );
+define( 'WPCACHEHOME', 'C:\avs-blog\wp-content\plugins\wp-super-cache/' );
+define( 'DB_NAME', 'avs4you_blog' );
 
 /** Имя пользователя MySQL */
 define( 'DB_USER', 'root' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', 'root' );
+define( 'DB_PASSWORD', '' );
 
 /** Имя сервера MySQL */
 define( 'DB_HOST', 'localhost' );
@@ -78,7 +78,22 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+
+/**define( 'WP_DEBUG', true );
+define('WP_DEBUG_LOG', true);
+
+define( 'WP_DEBUG_DISPLAY', false );
+define('CONCATENATE_SCRIPTS', false); **/
+
+/*define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );*/
+
+/*
+define('FORCE_SSL_LOGIN', true);
+define('FORCE_SSL_ADMIN', true);
+define( 'CONCATENATE_SCRIPTS', false );
+define( 'SCRIPT_DEBUG', true );*/
 
 /* Это всё, дальше не редактируем. Успехов! */
 
@@ -89,3 +104,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once( ABSPATH . 'wp-settings.php' );
+
+//define ('WP_ALLOW_REPAIR', true)
+

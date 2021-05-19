@@ -1,0 +1,64 @@
+# Translation of Plugins - Pageviews - Stable (latest release) in Italian
+# This file is distributed under the same license as the Plugins - Pageviews - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-11-11 21:19:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: it\n"
+"Project-Id-Version: Plugins - Pageviews - Stable (latest release)\n"
+
+#: pageviews.php:60
+msgid "Thank you for using Pageviews! <strong>Sync your numbers</strong> from Google Analytics and other services with <a href=\"%s\" target=\"_blank\">Pageviews Sync</a>."
+msgstr "Grazie di usare Pageviews! <strong>Sincronizza i tuoi dati</strong> da Google Analytics e altre servizi con <a href=\"%s\" target=\"_blank\">Pageviews Sync</a>."
+
+#: pageviews.php:62
+msgid "Thank you for using Pageviews! <strong>Don't start from scratch!</strong> Import existing numbers from Google Analytics and other services with <a href=\"%s\" target=\"_blank\">Pageviews Sync</a>."
+msgstr "Grazie di usare Pageviews! <strong>Non ricominciare da zero!</strong> Importa i dati esistenti da Google Analytics e altri servizi con <a href=\"%s\" target=\"_blank\">Pageviews Sync</a>."
+
+#: templates/auth.php:7
+msgid "Connect to Pageviews.io"
+msgstr "Connettiti a Pageviews.io"
+
+#: templates/auth.php:91
+msgid "Share Site Data with Pageviews.io"
+msgstr "Condividi i dati del sito con Pageviews.io"
+
+#: templates/auth.php:101
+msgid "Pageviews Sync is requesting temporary read-only permission to securely access the following information from your site <strong>%s</strong>:"
+msgstr "Pageviews Sync richiede un permesso temporaneo di sola lettura per accedere in sicurezza alle seguenti informazioni del tuo sito <strong>%s</strong>:"
+
+#: templates/auth.php:105
+msgid "Your Pageviews plugin public API key"
+msgstr "La tua chiave API di plugin pubblica Pageviews"
+
+#: templates/auth.php:110
+msgid "For more information, visit the Pageviews.io <a href=\"%s\" target=\"_blank\">privacy policy</a>."
+msgstr "Per maggiori informazioni, consulta l'<a href=\"%s\" target=\"_blank\">informativa sulla privacy</a> di Pageviews.io."
+
+#: templates/auth.php:114
+msgid "Allow Access"
+msgstr "Consenti l'accesso"
+
+#: templates/auth.php:115
+msgid "No, thanks"
+msgstr "No, grazie"
+
+#. Plugin Name of the plugin
+msgid "Pageviews"
+msgstr "Pageviews"
+
+#. Plugin URI of the plugin
+msgid "https://pageviews.io"
+msgstr "https://pageviews.io"
+
+#. Description of the plugin
+msgid "A simple and lightweight pageviews counter for your WordPress posts and pages."
+msgstr "Un semplice e leggero strumento per contare le visualizzazioni dei tuoi articoli e delle tue pagine WordPress."
+
+#: templates/auth.php:106
+msgid "All public post IDs and permalinks"
+msgstr "Tutti gli ID e i permalink degli articolo pubblici"

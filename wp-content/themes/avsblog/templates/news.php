@@ -33,8 +33,8 @@ $template = get_template();
 		$countOfCountSub = 0
 	?>
 
-		<a class="linkToHome inCicle" href=<?php echo site_url() ?><?php pll_e('/') ?>><?php pll_e('Back to main page') ?></a>
-		<h1><?php pll_e('News') ?></h1>
+		<a class="linkToHome inCicle" href=<?php echo site_url() ?>>BACK TO MAIN PAGE</a>
+		<h1>News</h1>
 		<?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
 			<div class="postWrapper" onclick="window.location='<?php the_permalink(); ?>'">
@@ -84,7 +84,7 @@ $template = get_template();
 				var current_page = '<?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>';
 				var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
 			</script>
-			<div class="main_button news_load_more" id="true_loadmore"><?php pll_e('Load more') ?></div>
+			<div class="main_button news_load_more" id="true_loadmore">Load more</div>
 			<?php wp_reset_postdata(); ?>
 		<?php else : ?>
 
@@ -96,7 +96,7 @@ $template = get_template();
 <?php endif; ?>
 
 
-<h1 class="otherNewsHeader"><?php pll_e('Other interesting news') ?></h1>
+<h1 class="otherNewsHeader">Other interesting news</h1>
 
 <?php 
 

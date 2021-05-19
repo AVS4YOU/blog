@@ -243,3 +243,29 @@ function ampforwp_sanitize_twitter_title($post_title){
     $post_title = esc_html( $post_title );
     return $post_title;
 }
+
+add_filter( 'amp_post_template_data', 'ampforwp_add_design_required_scripts', 100 );
+function ampforwp_add_design_required_scripts( $data ) {
+		$data['amp_component_scripts']['amp-accordion'] = 'https://cdn.ampproject.org/v0/amp-accordion-0.1.js';
+		return $data;
+	}
+	add_filter( 'amp_post_template_data', 'ampforwp_add_design2_required_scripts', 100 );
+	function ampforwp_add_design2_required_scripts( $data ) {
+			$data['amp_component_scripts']['amp-sidebar'] = 'https://cdn.ampproject.org/v0/amp-sidebar-0.1.js';
+			return $data;
+		}
+		add_filter( 'amp_post_template_data', 'ampforwp_add_design3_required_scripts', 100 );
+function ampforwp_add_design3_required_scripts( $data ) {
+		$data['amp_component_scripts']['amp-list'] = 'https://cdn.ampproject.org/v0/amp-list-0.1.js';
+		return $data;
+	}
+	add_filter( 'amp_post_template_data', 'ampforwp_add_design4_required_scripts', 100 );
+function ampforwp_add_design4_required_scripts( $data ) {
+		$data['amp_component_scripts']['amp-mustache'] = 'https://cdn.ampproject.org/v0/amp-mustache-0.2.js';
+		return $data;
+	}
+
+
+	add_filter( 'amp_post_template_metadata', 'amp_modify_json_metadata', 10, 2 ); // Adding custom metadata 
+	function amp_modify_json_metadata( $metadata, $post ) { if( 'post'=== $post->post_type ){ $metadata['@type'] = 'Article'; $metadata['publisher']['logo'] = array( '@type' => 'ImageObject', 'url' => get_stylesheet_directory_uri().'/images/avs4you.png', 'height' => 60, 'width' => 250 ); return $metadata; } }
+?>

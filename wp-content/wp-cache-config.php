@@ -8,7 +8,7 @@ See wp-cache.php for author details.
 $wpsc_version = 169;
 $wp_cache_mobile_groups = '';
 $wp_cache_debug_username = '830f99f1d2249bdeeae3e1ce00967c5e';
-$wp_cache_home_path = '/';
+$wp_cache_home_path = '/blog/';
 $wp_cache_slash_check = 1;
 $cache_page_secret = '1ad3922fb25578ac9542d70716d9f4fc';
 $wpsc_fix_164 = 1;
@@ -18,7 +18,7 @@ if ( ! defined('WPCACHEHOME') )
 
 $cache_compression = 0; // Super cache compression
 $cache_enabled = false;
-$super_cache_enabled = false;
+$super_cache_enabled = true;
 $cache_max_time = 1800;
 //$use_flock = true; // Set it true or false if you know what to use
 $cache_path = WP_CONTENT_DIR . '/cache/';
@@ -31,7 +31,7 @@ $cache_acceptable_files = array( 'wp-comments-popup.php', 'wp-links-opml.php', '
 $cache_rejected_uri = array('wp-.*\\.php', 'index\\.php');
 $cache_rejected_user_agent = array ( 0 => 'bot', 1 => 'ia_archive', 2 => 'slurp', 3 => 'crawl', 4 => 'spider', 5 => 'Yandex' );
 
-$cache_rebuild_files = 0;
+$cache_rebuild_files = 1;
 
 // Disable the file locking system.
 // If you are experiencing problems with clearing or creating cache files
@@ -84,7 +84,7 @@ $wp_cache_hide_donation = 0;
 $wp_cache_not_logged_in = 2;
 $wp_cache_clear_on_post_edit = 0;
 $wp_cache_hello_world = 0;
-$wp_cache_mobile_enabled = 1;
+$wp_cache_mobile_enabled = 0;
 $wp_cache_cron_check = 1;
 $wp_cache_mfunc_enabled = 0;
 $wp_cache_make_known_anon = 0;

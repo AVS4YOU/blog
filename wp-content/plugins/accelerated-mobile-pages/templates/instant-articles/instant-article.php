@@ -12,6 +12,7 @@
       <?php if ( isset($redux_builder_amp['fbia-header-text-area']) && $redux_builder_amp['fbia-header-text-area'] ) {
           echo $redux_builder_amp['fbia-header-text-area'];
       }?>
+    
     </head>
     <body>
         <article>

@@ -1,0 +1,105 @@
+
+.content-wrapper{
+    background-color: aqua;
+}
+.shortNewsWrapper{
+		display: block;
+	}
+
+	.wrapperMain{
+		grid-template-columns: 1fr;
+	}
+
+	.inputBox{
+		box-shadow: none;
+		grid-template-columns: 1fr;
+	}
+
+	.subEmailContainer .inputButton{
+		height: 60px;
+		margin-top: 20px;
+		border-radius: 5px;
+	}
+
+	.subEmailContainer .subEmailBlock h5, .subEmailContainer .emailSendedBlock h5{
+		font-size: 14px;
+	}
+
+	.subEmailBlock input{
+		border-radius: 5px;
+	}
+
+	.subEmailBlock h5{
+		display:none;
+	}
+
+	.subEmailBlock h2, .emailSendedBlock h2{
+		font-size: 20px;
+    	font-weight: 600;
+	}
+
+	.subEmailBlock p{
+		padding-bottom:0;
+	}
+
+	.subEmailBlock, .emailSendedBlock, .newsSubWrapper .subEmailBlock{
+		background-image: url(images/newsletter.svg);
+		background-position: 50% 20px;
+		background-repeat: no-repeat;
+		background-size: 40px;
+		padding-top: 85px;
+	}
+
+	.emailSendedBlock{
+		padding-bottom: 27px;
+	}
+
+	a .logo{
+		width: 50px;
+		background-size: 50px;
+		height: 50px;
+	}
+
+	.headerButton{
+		font-size: 12px;
+	}
+
+	.headerButton.sub{
+		font-size: 14px;
+		padding: 5px 20px;
+		margin: 0;
+	}
+
+	.headerButton.sub:hover{
+		padding: 6px 21px;
+	}
+
+	.subPopupContainer{
+		right: 0;
+		left: 0;
+		margin: auto;
+	}
+
+	#searchform{
+		margin-top:0;
+	}
+
+	.wrapperColumn.single{
+		padding-top: 10px;
+	}
+
+	.oneColumnSearch #searchform{
+		margin-top:0;
+	}
+
+	.otherNewsHeader{
+		font-size: 32px;
+	}
+
+	.activationWrapper p{
+		font-size: 14px;
+	}
+
+	.activationWrapper h1{
+		font-size: 28px;
+	}
