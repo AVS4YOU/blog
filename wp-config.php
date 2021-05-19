@@ -21,17 +21,17 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', 'C:\avs-blog\wp-content\plugins\wp-super-cache/' );
-define( 'DB_NAME', 'avs4you_blog' );
+define( 'WPCACHEHOME', 'D:\avs4you.teamlab.info\blog\wp-content\plugins\wp-super-cache/' );
+define( 'DB_NAME', 'avs4you_blog_test' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'avs-site' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'avs-site' );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com' );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -79,11 +79,11 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 
-/**define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', true );
 define('WP_DEBUG_LOG', true);
 
 define( 'WP_DEBUG_DISPLAY', false );
-define('CONCATENATE_SCRIPTS', false); **/
+define('CONCATENATE_SCRIPTS', false);
 
 /*define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
