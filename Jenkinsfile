@@ -18,7 +18,6 @@ pipeline {
 	
 			bat 'deploy.bat'
 
-                      							
       	}
       }
     }
