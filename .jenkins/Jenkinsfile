@@ -40,7 +40,7 @@ pipeline {
 				'''
 				bat '''
 					echo " == Deploy == "
-					%msdeployv2% -verb:sync -source:iisapp="%WORKSPACE%" -dest:iisapp="%DESTSITE%",computerName="%DESTHOST%",username=%deploymentuser%,password=%deploymentpass% -preSync:runCommand="%WORKSPACE%\\.jenkins\\sync.bat",waitInterval=120000 -postSync:runCommand="%WORKSPACE%\\.jenkins\\sync.bat",waitInterval=120000 -skip:objectName=dirPath,absolutePath=".git|.jenkins"				
+					%msdeployv2% -verb:sync -source:iisapp="%WORKSPACE%" -dest:iisapp="%DESTSITE%",computerName="%DESTHOST%",username=%deploymentuser%,password=%deploymentpass% -preSync:runCommand="%WORKSPACE%\\.jenkins\\sync.bat",waitInterval=120000 -postSync:runCommand="%WORKSPACE%\\.jenkins\\sync.bat",waitInterval=120000 -skip:objectName=dirPath,absolutePath=".git" -skip:objectName=dirPath,absolutePath=".jenkins"				
 				'''
 				}
 			}
