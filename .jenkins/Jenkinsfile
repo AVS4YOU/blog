@@ -1,11 +1,11 @@
 if ("${BRANCH_NAME}" == 'test_deploy') {
-	DESTSITE = 'avs4you.teamlab.info\blog'
+	DESTSITE = 'avs4you.teamlab.info\\blog'
 	DESTPOOL = 'avs4you.teamlab.info'
 	DESTHOST = '35.174.218.204'
 	}
 /*
 if ("${BRANCH_NAME}" == 'production_deploy') {
-	DESTSITE = 'www.avs4you.com\blog'
+	DESTSITE = 'www.avs4you.com\\blog'
 	DESTPOOL = 'www.avs4you.com'	
 	DESTHOST = '34.199.206.219'
 	}
