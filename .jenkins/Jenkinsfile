@@ -1,0 +1,49 @@
+if ("${BRANCH_NAME}" == 'test_deploy') {
+	DESTSITE = 'avs4you.teamlab.info\blog'
+	DESTPOOL = 'avs4you.teamlab.info'
+	DESTHOST = '35.174.218.204'
+	}
+/*
+if ("${BRANCH_NAME}" == 'production_deploy') {
+	DESTSITE = 'www.avs4you.com\blog'
+	DESTPOOL = 'www.avs4you.com'	
+	DESTHOST = '34.199.206.219'
+	}
+*/
+pipeline {
+ agent { label 'master' }
+	triggers {
+		githubPush()
+	}
+    options {
+		disableConcurrentBuilds()
+		buildDiscarder (logRotator(numToKeepStr: '3', artifactNumToKeepStr: '3'))
+    }
+	stages {
+        stage('deploy') {
+			when { 
+				anyOf { branch 'test_deploy'; branch 'production_deploy' }
+			}
+			environment {
+				DESTSITE = "${DESTSITE}"
+				DESTPOOL = "${DESTPOOL}"
+				DESTHOST = "${DESTHOST}"
+			}
+			steps {
+				withCredentials([
+					usernamePassword(credentialsId: 'deploymentuser_pass', usernameVariable: 'deploymentuser', passwordVariable: 'deploymentpass')
+					])
+				{
+				powershell '''
+					$ErrorActionPreference='Stop'
+					(get-content .jenkins\\sync.bat) | %{$_ -replace "%poolname%", "$Env:DESTPOOL"} | set-content .jenkins\\sync.bat
+				'''
+				bat '''
+					echo " == Deploy == "
+					%msdeployv2% -verb:sync -source:iisapp="%WORKSPACE%" -dest:iisapp="%DESTSITE%",computerName="%DESTHOST%",username=%deploymentuser%,password=%deploymentpass% -skip:Directory=".git" -skip:Directory=".jenkins" -preSync:runCommand="%WORKSPACE%\\.jenkins\\sync.bat",waitInterval=120000 -postSync:runCommand="%WORKSPACE%\\.jenkins\\sync.bat",waitInterval=120000
+				'''
+				}
+			}
+		}
+	}
+}
