@@ -1723,6 +1723,10 @@ footer .footerLogo{
 		margin-bottom: 15px;
 	}
 
+	label{
+		font-size: 15px;
+	}
+	
 	.headerWrapper{
 		max-width: 670px;
 		margin: auto;
