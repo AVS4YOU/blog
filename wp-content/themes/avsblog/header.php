@@ -43,7 +43,7 @@
 			<div class="logo"></div>
 		</a>
 		<div class="headLinkWrapper blogLink">
-			<a class="headerButton" href="<?php echo site_url() ?><?php pll_e('/') ?>"><?php pll_e('AVS-BLOG') ?></a>	
+			<a class="headerButton" href="<?php echo site_url() ?><?php pll_e('/') ?>"><?php pll_e('BLOG') ?></a>	
 		</div>		
 		<div class="site-navigation-box">
 			<div class="nav-item hasSubMenu">
