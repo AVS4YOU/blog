@@ -1835,6 +1835,10 @@ footer .footerLogo{
 		max-width: 277px;
 	}
 
+	label{
+		font-size: 15px;
+	}
+
 	.activationWrapper .contentBox{
 		margin: auto;
 	}
