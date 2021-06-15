@@ -21,17 +21,17 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', 'D:\avs4you.teamlab.info\blog\wp-content\plugins\wp-super-cache/' );
-define( 'DB_NAME', 'avs4you_blog_test' );
+define( 'WPCACHEHOME', 'D:\sites\blog.avs4you.com\avs4youBlog\wp-content\plugins\wp-super-cache/' );
+define( 'DB_NAME', 'avs4you_blog' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'avs-site' );
+define( 'DB_USER', 'avs4youblog' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', 'avs-site' );
+define( 'DB_PASSWORD', 'G08D8IT6LC' );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', 'teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com' );
+define( 'DB_HOST', 'localhost' );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'test-avs4you/blog' );
-define( 'SECURE_AUTH_KEY',  'test-avs4you/blog' );
-define( 'LOGGED_IN_KEY',    'test-avs4you/blog' );
-define( 'NONCE_KEY',        'test-avs4you/blog' );
-define( 'AUTH_SALT',        'test-avs4you/blog' );
-define( 'SECURE_AUTH_SALT', 'test-avs4you/blog' );
-define( 'LOGGED_IN_SALT',   'test-avs4you/blog' );
-define( 'NONCE_SALT',       'test-avs4you/blog' );
+define( 'AUTH_KEY',         '*~YMk#)1Z|-tF8qkk7^b?Zxh6cTcqNv`CCDFEAoe)~N*`egZP4oj4^SnIMEt,%jJ' );
+define( 'SECURE_AUTH_KEY',  '/=(-8;#Jkt(:9Bk*fA<TkxQ{oCVo)MNyr*On]k~8&C=+JN!] L!/;[x8ho nbQF&' );
+define( 'LOGGED_IN_KEY',    'vTxsLHb Br-PO>W_tH+SD^L|jIps;b GTm_{s4kQ69;3p,bkGo+3j#svDr)J0ES4' );
+define( 'NONCE_KEY',        'T6T_TVzimt/ad8enC&=N/cQ$Sz/KZ>BC%ie]2Ye]:r9U]E69Jr+W,-#o; g6IrTp' );
+define( 'AUTH_SALT',        'PUFuZn1vA0-E%Qab]=?i4pPor[R`onCb%e^di.tb&zPW>1(%2~e_ix@<%I3i@Bfr' );
+define( 'SECURE_AUTH_SALT', 'RlK6,p}7I!lK,FGo Me</o`h$+KmO]s}|-h3mF<|T}P]1PRW*#l&rN Ocv=bue`C' );
+define( 'LOGGED_IN_SALT',   'w>SB3cSw9,i #6)_egZ*;O*_#_}Uk1V}-_H3Gw;bkQlHf)o`WvM}R~gss=Dmdw0U' );
+define( 'NONCE_SALT',       'T@UitE?^E<JlF~j?b5(vpG1D[<PwRX{-.+F-x[93,b9~ICTU:M#~,`-[K8.q0^X~' );
 
 /**#@-*/
 
@@ -78,22 +78,7 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-
-define( 'WP_DEBUG', true );
-define('WP_DEBUG_LOG', true);
-
-define( 'WP_DEBUG_DISPLAY', false );
-define('CONCATENATE_SCRIPTS', false);
-
-/*define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
-define( 'WP_DEBUG_DISPLAY', false );*/
-
-/*
-define('FORCE_SSL_LOGIN', true);
-define('FORCE_SSL_ADMIN', true);
-define( 'CONCATENATE_SCRIPTS', false );
-define( 'SCRIPT_DEBUG', true );*/
+define( 'WP_DEBUG', false );
 
 /* Это всё, дальше не редактируем. Успехов! */
 
@@ -104,6 +89,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once( ABSPATH . 'wp-settings.php' );
-
-//define ('WP_ALLOW_REPAIR', true)
-
