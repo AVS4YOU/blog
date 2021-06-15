@@ -3,13 +3,13 @@ if ("${BRANCH_NAME}" == 'test_deploy') {
 	DESTPOOL = 'avs4you.teamlab.info'
 	DESTHOST = '35.174.218.204'
 	}
-/*
+
 if ("${BRANCH_NAME}" == 'production_deploy') {
 	DESTSITE = 'www.avs4you.com\\blog'
 	DESTPOOL = 'www.avs4you.com'	
 	DESTHOST = '34.199.206.219'
 	}
-*/
+
 pipeline {
  agent { label 'master' }
 	triggers {
