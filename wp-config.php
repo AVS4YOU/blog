@@ -78,7 +78,21 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', false);
+define('WP_DEBUG_LOG', false);
+
+define( 'WP_DEBUG_DISPLAY', false);
+define('CONCATENATE_SCRIPTS', false);
+
+/*define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );*/
+
+/*
+define('FORCE_SSL_LOGIN', true);
+define('FORCE_SSL_ADMIN', true);
+define( 'CONCATENATE_SCRIPTS', false );
+define( 'SCRIPT_DEBUG', true );*/
 
 /* Это всё, дальше не редактируем. Успехов! */
 
