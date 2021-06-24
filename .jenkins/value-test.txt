@@ -1,0 +1,15 @@
+D:\avs4you.teamlab.info\blog\wp-content\plugins\wp-super-cache/
+avs4you_blog_test
+userdb
+passdb
+teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com
+test-avs4you/blog
+test-avs4you/blog
+test-avs4you/blog
+test-avs4you/blog
+test-avs4you/blog
+test-avs4you/blog
+test-avs4you/blog
+test-avs4you/blog
+true
+true

@@ -21,17 +21,17 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
 define('WP_CACHE', true);
-define( 'WPCACHEHOME', 'D:\avs4you.teamlab.info\blog\wp-content\plugins\wp-super-cache/' );
-define( 'DB_NAME', 'avs4you_blog_test' );
+define( 'WPCACHEHOME', 'val_101' );
+define( 'DB_NAME', 'val_102' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'avs-site' );
+define( 'DB_USER', 'val_103' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', 'avs-site' );
+define( 'DB_PASSWORD', 'val_104' );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', 'teamlab-4testing.cyxlgbdbuyvm.us-east-1.rds.amazonaws.com' );
+define( 'DB_HOST', 'val_105' );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -48,14 +48,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'test-avs4you/blog' );
-define( 'SECURE_AUTH_KEY',  'test-avs4you/blog' );
-define( 'LOGGED_IN_KEY',    'test-avs4you/blog' );
-define( 'NONCE_KEY',        'test-avs4you/blog' );
-define( 'AUTH_SALT',        'test-avs4you/blog' );
-define( 'SECURE_AUTH_SALT', 'test-avs4you/blog' );
-define( 'LOGGED_IN_SALT',   'test-avs4you/blog' );
-define( 'NONCE_SALT',       'test-avs4you/blog' );
+define( 'AUTH_KEY',         'val_106' );
+define( 'SECURE_AUTH_KEY',  'val_107' );
+define( 'LOGGED_IN_KEY',    'val_108' );
+define( 'NONCE_KEY',        'val_109' );
+define( 'AUTH_SALT',        'val_110' );
+define( 'SECURE_AUTH_SALT', 'val_111' );
+define( 'LOGGED_IN_SALT',   'val_112' );
+define( 'NONCE_SALT',       'val_113' );
 
 /**#@-*/
 
@@ -79,8 +79,8 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 
-define( 'WP_DEBUG', true );
-define('WP_DEBUG_LOG', true);
+define( 'WP_DEBUG', val_114 );
+define('WP_DEBUG_LOG', val_115 );
 
 define( 'WP_DEBUG_DISPLAY', false );
 define('CONCATENATE_SCRIPTS', false);
@@ -89,8 +89,7 @@ define('CONCATENATE_SCRIPTS', false);
 define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', false );*/
 
-/*
-define('FORCE_SSL_LOGIN', true);
+/*define('FORCE_SSL_LOGIN', true);
 define('FORCE_SSL_ADMIN', true);
 define( 'CONCATENATE_SCRIPTS', false );
 define( 'SCRIPT_DEBUG', true );*/
