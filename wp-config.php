@@ -104,5 +104,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once( ABSPATH . 'wp-settings.php' );
 
-//define ('WP_ALLOW_REPAIR', true)
+//define ('WP_ALLOW_REPAIR', true) 
 
