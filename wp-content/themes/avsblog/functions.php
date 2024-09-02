@@ -15,6 +15,7 @@ function enqueue_scripts()
 }
 add_action('wp_enqueue_scripts', 'enqueue_scripts');
 add_filter('show_admin_bar', '__return_false');
+add_filter('xmlrpc_enabled', '__return_false');
 
 add_action('wp_ajax_loadmore', 'true_load_posts');
 add_action('wp_ajax_nopriv_loadmore', 'true_load_posts');
