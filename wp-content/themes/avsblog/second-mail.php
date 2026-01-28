@@ -356,12 +356,32 @@
                                                                     </a>
                                                                 </td>
                                                                 <td style="color: #FFFFFF; font-family: 'Open Sans', Arial, Helvetica, Tahoma, sans-serif; font-size: 15px; line-height: 20px; Margin: 0; padding-right: 15px;">
+                                                                    <a href="https://www.facebook.com/avs4you" style="border: 0; display: block; height: auto; padding: 0;" target="_blank">
+                                                                        <!--[if mso]>
+                                                                        <img width="20" height="20" src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/january2026/fb.png" style="border: 0px none;" alt="facebook" />
+                                                                        <![endif]-->
+                                                                        <!--[if !mso]> <!---->
+                                                                        <img width="20" height="20" src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/january2026/fb.png" alt="facebook" style="border: 0; color: #ffffff; display: block; font-size: 11px;" />
+                                                                        <!-- <![endif]-->
+                                                                    </a>
+                                                                </td>
+                                                                <td style="color: #FFFFFF; font-family: 'Open Sans', Arial, Helvetica, Tahoma, sans-serif; font-size: 15px; line-height: 20px; Margin: 0; padding-right: 15px;">
                                                                     <a href="https://x.com/avs4you" style="border: 0; display: block; height: auto; padding: 0;" target="_blank">
                                                                         <!--[if mso]>
                                                                         <img width="21" height="20" src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2024/avs_twitter.png" style="border: 0px none;" alt="Twitter" />
                                                                         <![endif]-->
                                                                         <!--[if !mso]> <!---->
                                                                         <img width="21" height="20" src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/december2024/avs_twitter.png" alt="Twitter" style="border: 0; color: #ffffff; display: block; font-size: 11px;" />
+                                                                        <!-- <![endif]-->
+                                                                    </a>
+                                                                </td>
+                                                                <td style="color: #FFFFFF; font-family: 'Open Sans', Arial, Helvetica, Tahoma, sans-serif; font-size: 15px; line-height: 20px; Margin: 0; padding-right: 15px;">
+                                                                    <a href="https://www.pinterest.com/avs4you" style="border: 0; display: block; height: auto; padding: 0;" target="_blank">
+                                                                        <!--[if mso]>
+                                                                        <img width="20" height="20" src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/january2026/pint.png" style="border: 0px none;" alt="Pinterest" />
+                                                                        <![endif]-->
+                                                                        <!--[if !mso]> <!---->
+                                                                        <img width="20" height="20" src="https://d2nlctn12v279m.cloudfront.net/media/newsletters/january2026/pint.png" alt="Pinterest" style="border: 0; color: #ffffff; display: block; font-size: 11px;" />
                                                                         <!-- <![endif]-->
                                                                     </a>
                                                                 </td>
